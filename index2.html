@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1080px, initial-scale=1.0">
+    <title>Справочник HTML | Основы HTML</title>
+    <link rel="stylesheet" href="css/index2.css">
+</head>
+<body>
+    <div class="shapka_saita">
+        <table class="shapka_saita1" cellspacing="15">
+            <tr>
+                <td style="width: 1px;">
+                    <a href="index.html">
+                        <img class="logo" src="img/logo.png">
+                    </a>
+                </td>
+                <td style="width: 1px;">
+                    <input class="poisk" type="text" placeholder="   поиск">
+                </td>
+                <td class="kolonna_put_k_stranice">
+                    Путь к странице >
+                    <a href="index.html" class="kolonna_put_k_stranice_links">Главная > </a>
+                    <a href="index2.html" class="kolonna_put_k_stranice_links">Основы HTML</a>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="shapka_saita2">
+        <table class="shapka_saita1" cellspacing="15">
+            <tr>
+                <td style="width: 1px;">
+                    <img class="logo" src="img/logo.png">
+                </td>
+                <td style="width: 1px;">
+                    <input class="poisk" type="text" placeholder="   поиск">
+                </td>
+                <td class="kolonna_put_k_stranice">
+                    Путь к странице >
+                    <a href="index.html" class="kolonna_put_k_stranice_links">Главная > </a>
+                    <a href="index2.html" class="kolonna_put_k_stranice_links">Основы HTML</a>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <br>
+    <div class="Navigation">
+        <div class="Navigation_content">
+            <div align="center">Навигация по странице</div>
+            <hr color="#e36e00">
+            <ol align="left" class="Navigation_spisok">
+                <li><a align="left" href="#Zacritie_Otcritie_Tegi" class="Ssilki_links">Теги: Закрытые и открытые</a></li><br>
+                <li><a href="#Structura_Saita" class="Ssilki_links">Структура сайта</a></li><br>
+                <li><a href="#Soderjaanie_tega_head" class="Ssilki_links">Содержание тега Head</a></li><br>
+                <li><a href="#Soderjaanie_tega_body" class="Ssilki_links">Содержание тега Body</a></li><br>
+            </ol>
+        </div>
+    </div>
+    <br>
+    <div class="Zacritie_Otcritie_Tegi" id="Zacritie_Otcritie_Tegi">
+        <table class="Zacritie_Otcritie_Tegi_shapka">
+            <tr>
+                <td>
+                    <p style="padding-left: 67px; padding-right: 67px;">Теги: Закрытые и открытые</p>
+                </td>
+            </tr>
+        </table>
+        <div class="Zacritie_Otcritie_Tegi_content">
+            <p style="padding-left: 67px; padding-right: 67px;">Некоторые теги являются контейнерами, содержащими в себе другие теги (например <span class="Videlenie">&ltdiv&gt&lt/div&gt</span>, <span class="Videlenie">&lttable&gt&lt/table&gt</span>), то есть если отключить контейнер, то все теги, содержащиеся в этом контейнере, тоже будут отключены.
+            <br>
+            <br>
+            Это можно рассмотреть на примере:</p>
+            <div class="code">
+                <span class="Videlenie">&lthtml&gt</span><br>
+                <span class="Videlenie">&lthead&gt</span><br>
+                <span class="Videlenie">&lttitle&gt</span>Справочник HTML<span class="Videlenie">&lt/title&gt</span><br>
+                <span class="Videlenie">&lt/head&gt</span><br>
+                <span class="Videlenie">&ltbody&gt</span><br>
+                <span class="Videlenie">&ltdiv&gt</span><br>
+                <span class="Videlenie">&ltp&gt</span>Абзац находится в контейнере "div"<span class="Videlenie">&lt/p&gt</span><br>
+                <span class="Videlenie">&ltp&gt</span>Если в теге "div" прописать "style="display: none;", то все теги "p" в контейнере "div" пропадут<span class="Videlenie">&lt/p&gt</span><br>
+                <span class="Videlenie">&lt/div&gt</span><br>
+                <span class="Videlenie">&lt/body&gt</span><br>
+                <span class="Videlenie">&lt/html&gt</span><br>
+            </div>
+            <br>
+            <table>
+                <tr>
+                    <td>
+                        <img style="padding-right: 50px; padding-left:57px" src="img/primer1.png">
+                    </td>
+                    <td>
+                        Контейнер &ltdiv&gt активен
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img style="padding-right: 50px; padding-left:57px" src="img/primer2.png">
+                    </td>
+                    <td>
+                        Контейнер &ltdiv&gt отключен
+                    </td>
+                </tr>
+            </table>
+            <p style="padding-left: 67px; padding-right: 67px;">Такие теги необходимо прописывать следующим образом:</p>
+            <div class="code">
+                <span class="Videlenie">&ltТЕГ&gt</span><br>
+                Содержимое контейнера<br>
+                <span class="Videlenie">&lt/ТЕГ&gt</span>
+            </div>
+            <p style="padding-left: 67px; padding-right: 67px;"><span class="Videlenie">Заметьте!</span><br> 
+Закрывающий тег начинается с “/”, это обязательное требование, в противном случае тег у вас не будет работать!</p>
+            <p style="padding-left: 67px; padding-right: 67px;"><span class="Videlenie">Но!</span><br>
+Это относится не ко всем тегам.<br>
+Как правило некоторые редакторы (например Visual Studio Code, Sublime Text, WebStorm) либо сами подсказывают что это за тег,  либо автоматически закрывают введенный тег.</p>
+        </div>
+    </div>
+    <br>
+    <div class="Structura_Saita" id="Structura_Saita">
+        <table class="Structura_Saita_shapka">
+            <tr>
+                <td>
+                    <p style="padding-left: 67px">Структура сайта</p>
+                </td>
+            </tr>
+        </table>
+        <p style="padding-left: 67px; padding-right: 67px;">Структура html-документа состоит из трех пар тегов:
+        <ol style="padding-left: 67px; padding-right: 67px;">
+            <li><span class="Videlenie">&ltHTML&gt</span> - служит обозначением для браузера, что это сайт на HTML.</li>
+            <li><span class="Videlenie">&ltHEAD&gt</span> -  содержит служебную информацию и не влияет на внешний вид документа. Его задачей является предоставление браузеру пользователя или серверу информации о том, как отобразить ваш документ.</li>
+            <li><span class="Videlenie">&ltBODY&gt</span> - все, что отображается на web-странице, находится в тегах <span class="Videlenie">&ltbody&gt&lt/body&gt</span>. Это  текст, картинки и исполняющиеся скрипты, а также теги для оформления всего этого.</li>
+        </ol></p>
+        <div class="code">
+            <span class="Videlenie">&lthtml&gt</span><br>
+            <span class="Videlenie">&lthead&gt</span><br>
+                Голова<br>
+            <span class="Videlenie">&lt/head&gt</span><br>
+            <span class="Videlenie">&ltbody&gt</span><br>
+                Тело<br>
+            <span class="Videlenie">&lt/body&gt</span><br>
+            <span class="Videlenie">&lt/html&gt</span><br>
+        </div>
+        <div class="Structura_Saita_content">
+        <p style="padding-left: 67px; padding-right: 67px;"><span class="Videlenie">Заметьте!</span><br>
+Все теги структуры сайта закрытые и должны писаться в правильной последовательности как показано на примере выше!</p>
+        </div>
+    </div>
+    <br>
+    <div class="Soderjaanie_tega_head" id="Soderjaanie_tega_head">
+        <table class="Zacritie_Otcritie_Tegi_shapka">
+            <tr>
+                <td>
+                    <p style="padding-left: 67px; color: #CCCCCD;">Содержание тега Head</p>
+                </td>
+            </tr>
+        </table>
+        <br>
+        <table align="center" class="Soderjaanie_tega_Podskazka">
+            <tr><td>
+                <img src="img/!.png">
+            </td>
+            <td>
+                <p>В этом разделе будут написаны не все теги Head, а лишь основные. Для просмотра всех тегов Head перейдите в раздел <a href="Список Тегов" class="Ssilki_links_teg_head">“Список Тегов”</a>.</p>
+            </td></tr>
+        </table>
+        <br>
+        <div class="Teg_Base">
+            <div class="Teg_ramka">
+                <span style="color: #CCCCCD;">Тег &ltBase&gt</span>
+                <hr color="#e36e00">
+                <p class="Teg_Content">Одиночный тег <span class="Videlenie">&ltbase&gt</span> служит для указания  полного URL-адреса документа. Зачем это нужно? Представьте, что блуждая по интернету, вы сохранили какую-нибудь  html-страницу себе на компьютер, с тем, чтобы просмотреть ее позже. Все картинки на этой страницы превратятся в красные крестики. Но если вы не отключены от сети, а на странице присутствует тег &ltbase&gt, то браузер будет знать, где искать необходимый файл, найдет его и загрузит картинки.</p>
+            </div>
+            <div class="Teg_Content">
+                <p style="padding-left: 67px; padding-right: 67px;">У этого тега один атрибут href, значением которого является адрес страницы.<br>Пример кода:</p>
+            </div>
+            <div class="code">
+                <span class="Videlenie">&lthtml&gt</span><br>
+                <span class="Videlenie">&lthead&gt</span><br>
+                <span class="Videlenie">&lttitle&gt</span>Справочник HTML<span class="Videlenie">&lt/title&gt</span><br>
+                <span class="Videlenie">&ltbase href="http://spravochnik_HTML.ru"&gt</span><br>
+                <span class="Videlenie">&lt/head&gt</span><br>
+                <span class="Videlenie">&ltbody&gt</span><br>
+                       Тело документа<br>
+                <span class="Videlenie">&lt/body&gt</span><br>
+                <span class="Videlenie">&lt/html&gt</span><br>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="Teg_Link">
+            <div class="Teg_ramka">
+                <span style="color: #CCCCCD;">Тег &ltLink&gt</span>
+                <hr color="#e36e00">
+                <p class="Teg_Content">Одиночный тег <span class="Videlenie">&ltlink&gt</span> необходим для подключения внешних файлов. Например, если вы будете использовать css или javascript в разработке собственного сайта, то нужно использовать тег &ltlink&gt чтобы твой сайт использовал стили из внешнего файла css или функции из внешнего файла javascript.<br>У тега &ltlink&gt несколько атрибутов:<ol class="Teg_Content"><li><span class="Videlenie">href</span>- указывает URL-адрес (путь) подключаемого файла.</li><li><span class="Videlenie">rel</span> - указывает на тип отношения данного документа к внешнему (например: rel="stylesheet" указывает, что внешний файл определяет стиль текущего документа).</li><li><span class="Videlenie">type</span> - указывает тип и параметры присоединенной таблицы стилей.</li></ol></p>
+            </div>
+            <div class="Teg_Content">
+                <p style="padding-left: 67px; padding-right: 67px;">Пример кода:</p>
+            </div>
+            <div class="code">
+                <span class="Videlenie">&lthtml&gt</span><br>
+                <span class="Videlenie">&lthead&gt</span><br>
+                <span class="Videlenie">&lttitle&gt</span>Справочник HTML<span class="Videlenie">&lt/title&gt</span><br>
+                <span class="Videlenie">&ltbase href="http://spravochnik_HTML.ru"&gt</span><br>
+                <span class="Videlenie">&ltlink rel="stylesheet" type="text/css" href="style.css"&gt</span><br>
+                <span class="Videlenie">&lt/head&gt</span><br>
+                <span class="Videlenie">&ltbody&gt</span><br>
+                       Тело документа<br>
+                <span class="Videlenie">&lt/body&gt</span><br>
+                <span class="Videlenie">&lt/html&gt</span><br>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="Teg_Title">
+            <div class="Teg_ramka">
+                Тег &ltTitle&gt
+                <hr color="#e36e00">
+                <p class="Teg_Content">Единственным обязательным элементом заголовка документа являются теги <span class="Videlenie">&lttitle&gt&lt/title&gt</span>. Они необходимы, чтобы дать документу название, оно отражается в заголовке окна браузера.</p>
+            </div>
+            <div class="Teg_Content">
+                <p style="padding-left: 67px; padding-right: 67px;">Пример кода:</p>
+            </div>
+            <div class="code">
+                <span class="Videlenie">&lthtml&gt</span><br>
+                <span class="Videlenie">&lthead&gt</span><br>
+                <span class="Videlenie">&lttitle&gt</span>Справочник HTML<span class="Videlenie">&lt/title></span><br>
+                <span class="Videlenie">&lt/head&gt</span><br>
+                <span class="Videlenie">&ltbody&gt</span><br>
+                        Тело документа<br>
+                <span class="Videlenie">&lt/body&gt</span><br>
+                <span class="Videlenie">&lt/html&gt</span><br>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="Soderjaanie_tega_body" id="Soderjaanie_tega_body">
+        <table class="Zacritie_Otcritie_Tegi_shapka">
+            <tr>
+                <td>
+                    <p style="padding-left: 67px">Содержание тега Body</p>
+                </td>
+            </tr>
+        </table>
+        <br>
+        <table align="center" class="Soderjaanie_tega_Podskazka">
+            <tr><td>
+                <img src="img/!.png">
+            </td>
+            <td>
+                <p>Обязательных параметров у тега <span class="Videlenie">&ltbody&gt</span> нет, да и применение необязательных параметров тоже не приветствуется.</p>
+            </td></tr>
+        </table>
+        <br>
+        <div class="Soderjaanie_tega_body_content">
+            <p class="Structura_Saita">Все, что отображается на web-странице, находится в тегах <span class="Videlenie">&ltbody&gt&lt/body&gt</span> . Это текст, картинки и исполняющиеся скрипты, а также теги для оформления всего этого.</p>
+            <p>Рассмотрим параметры, которые поддерживаются всеми браузерами:</p>
+            <p style="line-height:30px"><span class="Videlenie">alink</span> - устанавливает цвет активной ссылки. Текущий цвет ссылки меняется на активный при нажатии на нее.<br>
+            <span class="Videlenie">vlink</span> - устанавливает цвет посещенной ссылки, т.е. той, по которой уже щелкали.<br>
+            <span class="Videlenie">background</span> - указывает на изображение, которое будет использоваться в качестве фонового рисунка. Этот рисунок заполняет собой все видимое пространство окна. Если рисунок меньше окна браузера, то он повторяется, образуя мозаику из одинаковых картинок. На стыке этих картинок возникают видимые переходы. Поэтому к подбору фоновых рисунков следует подходить с большим вниманием.<br>
+            <span class="Videlenie">bgcolor</span> - указывает фоновый цвет документа.<br>
+            <span class="Videlenie">leftmargin</span> - определяет отступ от левого края окна браузера до контента страницы.<br>
+            <span class="Videlenie">rightmargin</span> - определяет отступ от правого края окна браузера до контента страницы.<br>
+            <span class="Videlenie">topmargin</span> - определяет отступ от верхнего края окна браузера до контента страницы.<br>
+            <span class="Videlenie">bottommargin</span> - определяет отступ от нижнего края окна браузера до контента страницы.<br>
+            <span class="Videlenie">text</span> - устанавливает цвет текста для всего документа.</p>
+        </div>
+        <img src="img/body_example.png" style="display: block; margin: auto;">
+    </div>
+    <br>
+    <div class="konec">
+        <br>
+        <div class="konec_links">
+            <a style="padding-left: 25px; color: #e36e00; text-decoration: none;" href="index.html">Главная</a>
+            <a style="color: #e36e00; text-decoration: none;" href="index2.html">Основы Html</a>
+            <a style="color: #e36e00; text-decoration: none;" href="index0.html">Список Тегов</a>
+            <a style="color: #e36e00; text-decoration: none;" href="index0.html">Шаблоны</a>
+        </div>
+        <p style='padding-left: 25px'>2026 г.<br>
+        Авторы проекта:<br>
+        Студенты гр.ИСИП 25-1 Янковский Иван и Цветкова Эрика</p>
+        <p style='padding-left: 25px'>
+            Связь с нами:<br>
+            frogilenorezerv@gmail.com<br>
+            eream.jc@gmail.com
+        </p>
+    </div>
+</body>
+</html>
