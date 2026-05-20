@@ -61,13 +61,14 @@ body{
     border-radius: 30%;
 }
 
-.Poisk{
+.poisk{
+    padding-left: 1%;
     border-radius: 7px;
     width: 158px;
     height: 38px;
     font-family: Montserrat_Thin;
     font-size: 20px;
-    background-color: #CCCCCD;
+    background-color: #CCCCCd;
 }
 
 .razdeli_sleva {

@@ -40,6 +40,10 @@ body{
 .Videlenie{
     color:#e36e00
 }
+.videlenie_poloska{
+    border-left: solid #e36e00;
+    padding-left: 1%;
+}
 .shapka_saita{
     border-bottom: solid 2px #33333E;
     width: 100%;
@@ -58,6 +62,7 @@ body{
     border-radius: 30%;
 }
 .poisk{
+    padding-left: 1%;
     border-radius: 7px;
     width: 158px;
     height: 38px;
