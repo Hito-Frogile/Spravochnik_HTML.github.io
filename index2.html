@@ -47,14 +47,14 @@
     <div class="Navigation">
         <div class="Navigation_content">
             <div align="center">Навигация по странице</div>
-            <hr color="#e36e00">
-            <ol align="left" class="Navigation_spisok">
-                <li><a align="left" href="#Zacritie_Otcritie_Tegi" class="Ssilki_links">Теги: Закрытые и открытые</a></li><br>
-                <li><a href="#Structura_Saita" class="Ssilki_links">Структура сайта</a></li><br>
-                <li><a href="#Soderjaanie_tega_head" class="Ssilki_links">Содержание тега Head</a></li><br>
-                <li><a href="#Soderjaanie_tega_body" class="Ssilki_links">Содержание тега Body</a></li><br>
-            </ol>
-        </div>
+                <hr color="#e36e00">
+                <ol align="left" class="Navigation_spisok">
+                    <li><a href="#Zacritie_Otcritie_Tegi" class="Ssilki_links">Теги: Закрытые и открытые</a></li><br>
+                    <li><a href="#Structura_Saita" class="Ssilki_links">Структура сайта</a></li><br>
+                    <li><a href="#Soderjaanie_tega_head" class="Ssilki_links">Содержание тега Head</a></li><br>
+                    <li><a href="#Soderjaanie_tega_body" class="Ssilki_links">Содержание тега Body</a></li><br>
+                </ol>
+            </div>
     </div>
     <br>
     <div class="Zacritie_Otcritie_Tegi" id="Zacritie_Otcritie_Tegi">
@@ -71,17 +71,17 @@
             <br>
             Это можно рассмотреть на примере:</p>
             <div class="code">
-                <span class="Videlenie">&lthtml&gt</span><br>
-                <span class="Videlenie">&lthead&gt</span><br>
-                <span class="Videlenie">&lttitle&gt</span>Справочник HTML<span class="Videlenie">&lt/title&gt</span><br>
-                <span class="Videlenie">&lt/head&gt</span><br>
-                <span class="Videlenie">&ltbody&gt</span><br>
-                <span class="Videlenie">&ltdiv&gt</span><br>
-                <span class="Videlenie">&ltp&gt</span>Абзац находится в контейнере "div"<span class="Videlenie">&lt/p&gt</span><br>
-                <span class="Videlenie">&ltp&gt</span>Если в теге "div" прописать "style="display: none;", то все теги "p" в контейнере "div" пропадут<span class="Videlenie">&lt/p&gt</span><br>
-                <span class="Videlenie">&lt/div&gt</span><br>
-                <span class="Videlenie">&lt/body&gt</span><br>
-                <span class="Videlenie">&lt/html&gt</span><br>
+                <span class="Videlenie">&lthtml&gt<br>
+                &lthead&gt</span><br>
+                <span class="Videlenie">&lttitle&gt</span>⠀Справочник HTML⠀<span class="Videlenie">&lt/title&gt</span><br>
+                <span class="Videlenie">&lt/head&gt<br>
+                &ltbody&gt<br>
+                &ltdiv&gt</span><br>
+                <span class="Videlenie">&ltp&gt</span>⠀Абзац находится в контейнере "div"⠀<span class="Videlenie">&lt/p&gt</span><br>
+                <span class="Videlenie">&ltp&gt</span>⠀Если в теге "div" прописать "style="display: none;", то все теги "p" в контейнере "div" пропадут⠀<span class="Videlenie">&lt/p&gt</span><br>
+                <span class="Videlenie">&lt/div&gt<br>
+                &lt/body&gt<br>
+                &lt/html&gt</span><br>
             </div>
             <br>
             <table>
@@ -108,11 +108,13 @@
                 Содержимое контейнера<br>
                 <span class="Videlenie">&lt/ТЕГ&gt</span>
             </div>
-            <p style="padding-left: 67px; padding-right: 67px;"><span class="Videlenie">Заметьте!</span><br> 
+            <div style="padding-left: 67px; padding-right: 67px;">
+            <p class="videlenie_poloska"><span style="color:#e36e00">Заметьте!</span><br> 
 Закрывающий тег начинается с “/”, это обязательное требование, в противном случае тег у вас не будет работать!</p>
-            <p style="padding-left: 67px; padding-right: 67px;"><span class="Videlenie">Но!</span><br>
+            <p class="videlenie_poloska"><span style="color:#e36e00">Но!</span><br>
 Это относится не ко всем тегам.<br>
 Как правило некоторые редакторы (например Visual Studio Code, Sublime Text, WebStorm) либо сами подсказывают что это за тег,  либо автоматически закрывают введенный тег.</p>
+            </div>
         </div>
     </div>
     <br>
@@ -131,18 +133,20 @@
             <li><span class="Videlenie">&ltBODY&gt</span> - все, что отображается на web-странице, находится в тегах <span class="Videlenie">&ltbody&gt&lt/body&gt</span>. Это  текст, картинки и исполняющиеся скрипты, а также теги для оформления всего этого.</li>
         </ol></p>
         <div class="code">
-            <span class="Videlenie">&lthtml&gt</span><br>
-            <span class="Videlenie">&lthead&gt</span><br>
+            <span class="Videlenie">&lthtml&gt<br>
+            &lthead&gt</span><br>
                 Голова<br>
-            <span class="Videlenie">&lt/head&gt</span><br>
-            <span class="Videlenie">&ltbody&gt</span><br>
+            <span class="Videlenie">&lt/head&gt<br>
+            &ltbody&gt</span><br>
                 Тело<br>
-            <span class="Videlenie">&lt/body&gt</span><br>
-            <span class="Videlenie">&lt/html&gt</span><br>
+            <span class="Videlenie">&lt/body&gt<br>
+            &lt/html&gt</span><br>
         </div>
         <div class="Structura_Saita_content">
-        <p style="padding-left: 67px; padding-right: 67px;"><span class="Videlenie">Заметьте!</span><br>
+            <div style="padding-left: 67px; padding-right: 67px;">
+                <p class="videlenie_poloska"><span style="color:#e36e00">Заметьте!</span><br>
 Все теги структуры сайта закрытые и должны писаться в правильной последовательности как показано на примере выше!</p>
+            </div>
         </div>
     </div>
     <br>
@@ -174,9 +178,9 @@
                 <p style="padding-left: 67px; padding-right: 67px;">У этого тега один атрибут href, значением которого является адрес страницы.<br>Пример кода:</p>
             </div>
             <div class="code">
-                <span class="Videlenie">&lthtml&gt</span><br>
-                <span class="Videlenie">&lthead&gt</span><br>
-                <span class="Videlenie">&lttitle&gt</span>Справочник HTML<span class="Videlenie">&lt/title&gt</span><br>
+                <span class="Videlenie">&lthtml&gt<br>
+                &lthead&gt<br>
+                &lttitle&gt</span>⠀Справочник HTML⠀<span class="Videlenie">&lt/title&gt</span><br>
                 <span class="Videlenie">&ltbase href="http://spravochnik_HTML.ru"&gt</span><br>
                 <span class="Videlenie">&lt/head&gt</span><br>
                 <span class="Videlenie">&ltbody&gt</span><br>
@@ -197,16 +201,16 @@
                 <p style="padding-left: 67px; padding-right: 67px;">Пример кода:</p>
             </div>
             <div class="code">
-                <span class="Videlenie">&lthtml&gt</span><br>
-                <span class="Videlenie">&lthead&gt</span><br>
-                <span class="Videlenie">&lttitle&gt</span>Справочник HTML<span class="Videlenie">&lt/title&gt</span><br>
+                <span class="Videlenie">&lthtml&gt<br>
+                &lthead&gt<br>
+                &lttitle&gt</span>⠀Справочник HTML⠀<span class="Videlenie">&lt/title&gt</span><br>
                 <span class="Videlenie">&ltbase href="http://spravochnik_HTML.ru"&gt</span><br>
                 <span class="Videlenie">&ltlink rel="stylesheet" type="text/css" href="style.css"&gt</span><br>
-                <span class="Videlenie">&lt/head&gt</span><br>
-                <span class="Videlenie">&ltbody&gt</span><br>
+                <span class="Videlenie">&lt/head&gt<br>
+                &ltbody&gt</span><br>
                        Тело документа<br>
-                <span class="Videlenie">&lt/body&gt</span><br>
-                <span class="Videlenie">&lt/html&gt</span><br>
+                <span class="Videlenie">&lt/body&gt<br>
+                &lt/html&gt</span><br>
             </div>
         </div>
         <br>
@@ -221,14 +225,14 @@
                 <p style="padding-left: 67px; padding-right: 67px;">Пример кода:</p>
             </div>
             <div class="code">
-                <span class="Videlenie">&lthtml&gt</span><br>
-                <span class="Videlenie">&lthead&gt</span><br>
-                <span class="Videlenie">&lttitle&gt</span>Справочник HTML<span class="Videlenie">&lt/title></span><br>
-                <span class="Videlenie">&lt/head&gt</span><br>
-                <span class="Videlenie">&ltbody&gt</span><br>
+                <span class="Videlenie">&lthtml&gt<br>
+                &lthead&gt<br>
+                &lttitle&gt</span>⠀Справочник HTML⠀<span class="Videlenie">&lt/title></span><br>
+                <span class="Videlenie">&lt/head&gt<br>
+                &ltbody&gt</span><br>
                         Тело документа<br>
-                <span class="Videlenie">&lt/body&gt</span><br>
-                <span class="Videlenie">&lt/html&gt</span><br>
+                <span class="Videlenie">&lt/body&gt<br>
+                &lt/html&gt</span><br>
             </div>
         </div>
     </div>
