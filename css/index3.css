@@ -1,0 +1,181 @@
+@font-face {
+    font-family: Montserrat_Thin;
+    src: url(Montserrat-Thin.ttf);
+}
+@font-face {
+    font-family: Montserrat_Alternates_SemiBold;
+    src: url(MontserratAlternates-SemiBold.ttf);
+}
+@font-face {
+    font-family: Montserrat_Alternates_Bold;
+    src: url(MontserratAlternates-Bold.ttf);
+}
+@font-face {
+    font-family: Montserrat_Alternates_Regular;
+    src: url(MontserratAlternates-Regular.ttf);
+}
+@font-face {
+    font-family: Montserrat_Alternates_Medium;
+    src: url(MontserratAlternates-Medium.ttf);
+}
+html {
+  scroll-behavior: smooth; /* Плавный скролл */
+}
+
+/* Визуальное выделение якоря при переходе */
+:target {
+  padding-top: 60px; /* Отступ сверху, если есть фиксированное меню */
+  margin-top: -60px; /* Компенсация отступа */
+}
+body{
+    background-color: #070709;
+    color: #CCCCCD;
+    margin: 0;
+    padding: 0;
+    font-family:Montserrat_Alternates_Regular;
+    font-size: 20px;
+}
+link{
+    color: #CCCCCD;
+}
+.Videlenie{
+    color:#e36e00
+}
+.videlenie_poloska{
+    border-left: solid #e36e00;
+    padding-left: 1%;
+}
+
+.videlenie_poloska_white{
+    border-left: solid #CCCCCD;
+    padding-left: 1%;
+}
+
+.shapka_saita{
+    border-bottom: solid 2px #33333E;
+    width: 100%;
+    position: fixed;
+}
+.shapka_saita1{
+    background-color:#141419;
+    padding-left: 8px;
+    width: 100%;
+    border-bottom: solid 2px #33333E;
+    font-family: Montserrat_Thin;
+}
+.logo{
+    width: 70px;
+    height: 70px;
+    border-radius: 30%;
+}
+.poisk{
+    padding-left: 1%;
+    border-radius: 7px;
+    width: 158px;
+    height: 38px;
+    font-family: Montserrat_Thin;
+    font-size: 20px;
+    background-color: #CCCCCd;
+}
+.kolonna_put_k_stranice{
+    text-align: right;
+    padding-right: 8px;
+    font-size: 20px;
+}
+.kolonna_put_k_stranice_links{
+    text-decoration: none;
+    color: #CCCCCD;
+}
+.Navigation_content{
+    background-color: #141419;
+    padding: 35px;
+    border-radius: 7px;
+    width: 50%;
+    font-family: Montserrat_Alternates_Bold;
+    font-size: 32px;
+    margin-left: 66px;
+    margin: auto;
+}
+.Navigation_spisok{
+    font-size: 20px;
+    color: #CCCCCd;
+    line-height: 70%;
+}
+
+.Ssilki_links{
+    color: #CCCCCD;
+    font-size: 20px;
+}
+
+.code{
+    background-color: #141419;
+    padding: 35px;
+    border-radius: 7px;
+    width: 70%;
+    margin-left: 57px;
+    line-height: 1.2;
+}
+
+.Teg_ramka{
+    background-color: #141419;
+    padding: 35px;
+    border-radius: 7px;
+    width: 90%;
+    font-family: Montserrat_Alternates_Bold;
+    font-size: 32px;
+    margin-left: 66px;
+    margin: auto;
+}
+
+.konec{
+    background-color:#141419;
+    width: 100%;
+    border-top: solid 2px #33333E;   
+    display: flex;
+    flex-direction: column;
+}
+.konec_links{
+    display: flex;
+    gap: 20px;
+}
+
+.deystviya{
+    color: #e36e00;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.codedeystviya{
+    background-color: #141419;
+    padding: 35px;
+    border-radius: 7px;
+    width: 70%;
+    margin-left: 57px;
+    line-height: 1.2;
+}
+
+.imagess{
+    border-radius: 7px;
+    width: 70%;
+}
+
+.podshapka{
+    padding-left: 67px;
+    padding-right: 67px;
+    line-height: 1.2;
+    font-size: 20px;
+
+}
+
+.shapochka_obshaya{
+    background-color:#141419;
+    width: 100%;
+    border-bottom: solid 2px #33333E;   
+    font-family: Montserrat_Alternates_SemiBold;
+    font-size: 32px;
+}
+
+.links_text{
+    color: #e36e00;
+    font-weight: bold;
+}

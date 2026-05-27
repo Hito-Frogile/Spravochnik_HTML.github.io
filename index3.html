@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1080px, initial-scale=1.0">
+    <title>Справочник HTML | Практика основ</title>
+    <link rel="stylesheet" href="css/index3.css">
+</head>
+<body>
+    <div class="shapka_saita">
+        <table class="shapka_saita1" cellspacing="15">
+            <tr>
+                <td style="width: 1px;">
+                    <a href="index.html">
+                        <img class="logo" src="img/logo.png">
+                    </a>
+                </td>
+                <td style="width: 1px;">
+                    <input class="poisk" type="text" placeholder="   поиск">
+                </td>
+                <td class="kolonna_put_k_stranice">
+                    Путь к странице >
+                    <a href="index.html" class="kolonna_put_k_stranice_links">Главная > </a>
+                    <a href="index3.html" class="kolonna_put_k_stranice_links">Практика основ</a>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="shapka_saita2">
+        <table class="shapka_saita1" cellspacing="15">
+            <tr>
+                <td style="width: 1px;">
+                    <img class="logo" src="img/logo.png">
+                </td>
+                <td style="width: 1px;">
+                    <input class="poisk" type="text" placeholder="   поиск">
+                </td>
+                <td class="kolonna_put_k_stranice">
+                    Путь к странице >
+                    <a href="index.html" class="kolonna_put_k_stranice_links">Главная > </a>
+                    <a href="index3.html" class="kolonna_put_k_stranice_links">Практика основ</a>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <br>
+    <div class="Navigation">
+        <div class="Navigation_content">
+            <div align="center">Навигация по странице</div>
+                <hr color="#e36e00">
+                <ol align="left" class="Navigation_spisok">
+                    <li><a href="#pervaya_stroka" class="Ssilki_links">Первая строка кода</a></li><br>
+                    <li><a href="#Structura_Saita" class="Ssilki_links">Скелет: структура HTML-документа</a></li><br>
+                    <li><a href="#formatirovanie_texta" class="Ssilki_links">Форматирование текста</a></li><br>
+                    <li><a href="#links and img" class="Ssilki_links">Ссылки и изображения</a></li><br>
+                    <li><a href="#viravnivanie" class="Ssilki_links">Выравнивание текста</a></li><br>
+                </ol>
+            </div>
+    </div>
+    <br>
+    <div class="pervaya_stroka" id="pervaya_stroka">
+        <table class="shapochka_obshaya">
+            <tr>
+                <td>
+                    <p style="padding-left: 67px; padding-right: 67px;">ШАГ 1 - Ваша первая строка кода</p>
+                </td>
+            </tr>
+        </table>
+        <div class="Zacritie_Otcritie_Tegi_content">
+            <p style="padding-left: 67px; padding-right: 67px;"><b>Что такое HTML простыми словами?</b>
+                <br>
+                <br>
+             HTML - это не язык программирования, а язык разметки. Представьте, что вы пишите письмо и выделяете заголовок жирным, а важные слова подчёркиваете. HTML делает тоже самое, но для веб-страниц.
+                <br>
+                <br>
+             <b>Для написания первой строки кода понадобится БЛОКНОТ и БРАУЗЕР</b></p>
+            <div class="codedeystviya">
+                
+                <p class="deystviya">1 ДЕЙСТВИЕ</p>
+                <p>Cоздайте на рабочем столе новую папку с названием “мой первый сайт”</p>
+                
+                <img class="imagess" src="img/action1.png">
+
+                <p class="deystviya">2 ДЕЙСТВИЕ</p>
+                <p>Внутри папки создайте текстовый файл. назовите его index.html</p>
+
+                <p style="padding-right: 67px;" class="videlenie_poloska"><span style="color:#e36e00">Важно!</span><br> 
+                   расширение должно быть именно .html, а не .txt. Если не видите расширение - включите их отображение в настройках проводника.</p>
+
+                <img class="imagess" src="img/action2.png">
+
+                <p class="deystviya">3 ДЕЙСТВИЕ</p>
+                <p>Откройте этот файл через блокнот или любой текстовый редактор. Напишите внутри что-нибудь. Например, “привет, мир!”</p>
+                <img class="imagess" src="img/action3.png">
+                <img class="imagess" src="img/action3_1.png">
+
+                <p class="deystviya">4 ДЕЙСТВИЕ</p>
+                <p>Сохраните файл ( Ctrl + S ). Теперь откройте его двойным щелчком ( ЛКМ ) - он запустится в браузере.
+                <br><br>
+                Что вы увидите? Чистую белую страницу с вашим текстом.</p>
+                
+                <img class="imagess" src="img/action4.png">
+
+                <p><b>Поздравляю! Вы только что создали и открыли свою первую веб-страницу.</b></p>
+            </div>
+            <br>
+            
+        </div>
+    </div>
+    <br>
+
+    <div class="Structura_Saita" id="Structura_Saita">
+        <table class="shapochka_obshaya">
+            <tr>
+                <td>
+                    <p style="padding-left: 67px">ШАГ 2 - Правильная структура документа</p>
+                    <div class="podshapka"><p>Подробнее о структуре документа можно прочитать в <a href="index2.html" class="links_text">основах HTML</a></p></div>
+                </td>
+            </tr>
+        </table>
+        <p style="padding-left: 67px; padding-right: 67px;">То, что вы написали в первом шаге работает, но так делать не принято. Браузер дорисовывает недостающие части сам, но для дальнейшей работы требуется не только простой текст.
+                <br>
+                <br>
+                <b>Обязательная структура любого HTML-документа:</b></p>
+
+            <table>
+                <tr>
+                    <td>
+        <div class="codedeystviya">
+            <span class="Videlenie">&lthtml&gt<br><br>
+            &lthead&gt</span><br>
+            ⠀⠀⠀<span class="Videlenie">&lttitle&gt</span> Вкладка <span class="Videlenie">&lt/title&gt<br></span>
+            <span class="Videlenie">&lt/head&gt<br><br>
+            &ltbody&gt</span><br>
+                Тело<br>
+            <span class="Videlenie">&lt/body&gt<br><br>
+            &lt/html&gt</span><br>
+        </div>
+                    </td>
+                    <td>
+        <div class="codedeystviya">
+             <p><b>html</b> - даёт браузеру информацию о использовании HTML</p>
+
+             <p><b>head</b> (голова) - настройки страницы, которые не видны пользователю</p>
+
+             <p><b>title</b> - название вкладки браузера</p>
+
+             <p><b>body</b> (тело) - сама страница сайта. то, что видят пользователи</p>
+        </div>
+                    </td>
+                </tr>
+            </table>
+        <br>
+        <p class="deystviya" style="padding-left: 67px; padding-right: 67px;">ПРАКТИКА</p>
+        <p style="padding-left: 67px; padding-right: 67px;"><b>ЗАДАНИЕ:</b> возьмите ваш файл index.html из первого шага и полностью замените его содержимое на обязательную структуру html-документа (должны присутствовать теги html, head, title и body)</p>
+
+        <img class="imagess" style="padding-left: 67px; padding-right: 67px;" src="img/step2_1.png">
+            
+        <div style="padding-left: 67px; padding-right: 67px;">
+            <p class="videlenie_poloska_white"><b>1. Напишите название для вкладки</b> вашего сайта <b>внутри тега title</b>.
+            <br><br>
+             <b>2. Вставьте любой текст</b> или стихотворение/песню <b>внутри тега body</b>.
+            </p>
+        </div>
+        
+        <img class="imagess" style="padding-left: 67px; padding-right: 67px;" src="img/step2_2.png">
+
+        <div style="padding-left: 67px; padding-right: 67px;">
+            <p class="videlenie_poloska_white"><b>3. Сохраните файл и обновите страницу в браузере.</b>  Сами теги на странице не отображаются - так и должно быть.
+            <br><br>
+             <b>4. Посмотрите на вкладку</b> - у неё появилось название.
+             <br><br>
+             <b>5. Обратите внимание на ваш текст.</b> Если в вашем файле присутствуют отступы или абзацы, то без дополнительных тегов их не будет видно. 
+            </p>
+        </div>
+
+    </div>
+    <br>
+    <div class="formatirovanie_texta" id="formatirovanie_texta">
+        <table class="shapochka_obshaya">
+            <tr>
+                <td>
+                    <p style="padding-left: 67px; color: #CCCCCD;">ШАГ 3 - Форматирование текста</p>
+                    <p class="podshapka">Подробнее о том, как устроены теги, можно прочитать в <a href="index2.html" class="links_text">основах HTML</a></p>
+                </td>
+            </tr>
+        </table>
+        <br>
+
+        <p style="padding-left: 67px; padding-right: 67px;">Большинство тегов выглядит так:<br>
+            <span class="Videlenie">&ltоткрывающая часть&gt</span> содержание <span class="Videlenie">&ltзакрывающая часть&gt</span>
+            <br><br>
+            <b>открывающая часть</b> - включает команду в том месте, где она расположена.<br>
+            <b>закрывающая часть</b> - аналогична, но отключает команду.
+        </p>
+
+                <div style="padding-left: 67px; padding-right: 67px;">
+                 <p class="videlenie_poloska"><span style="color:#e36e00">Запомните:</span><br> 
+                   если забыть закрывающую часть тега, сам тег и команда не будут работать.</p>
+                </div>
+<br>
+<hr color="#33333E">
+
+        <p class="deystviya" style="padding-left: 67px; padding-right: 67px;">ПРАКТИКА</p>
+        <p style="padding-left: 67px; padding-right: 67px;"><b>ЗАДАНИЕ:</b> Откройте ваш файл index.html. Внутри тега body удалите то, что там есть, и вставьте текст любого стихотворения или песни (если ещё не сделали этого на предыдущем шаге). Обязательно укажите автора и название - это понадобится нам в дальнейшем.</p>
+
+            <div class="codedeystviya">
+                <p>
+                    <b>1. Расставьте следующие теги:</b><br><br>
+                    <span class="Videlenie">&lth1&gt</span> . . . <span class="Videlenie">&lt/h1&gt</span> - заголовок первого уровня. для названия стихотворения/песни.
+                    <br><br>
+                    <span class="Videlenie">&lth2&gt</span> . . . <span class="Videlenie">&lt/h2&gt</span> - заголовок третьего уровня. для автора.
+                    <br><br>
+                    <span class="Videlenie">&ltp&gt</span> . . . <span class="Videlenie">&lt/p&gt</span> - тег обычного абзаца. там, где располагается закрывающая часть, текст обрывается и переносится на следующую строку.
+                    <br><br>
+                    <span class="Videlenie">&ltbr&gt</span> - одиночный тег без закрывающей части. служит в качестве пустой строки. можно вставить между заголовками и текстом.
+                    <br><br>
+                    <b>Сохраните файл и обновите страницу в браузере. Исправьте ошибки при их наличии.</b>
+                    <br><br>
+                </p>
+                <img class="imagess" src="img/step3_1.png">
+            </div>
+            <br>
+            <div class="codedeystviya">
+                <p>
+                    <b>2. Попробуйте на деле эти теги:</b><br><br>
+                    <span class="Videlenie">&ltb&gt</span> . . . <span class="Videlenie">&lt/b&gt</span> - жирный шрифт. важный, серьёзный акцент.
+                    <br><br>
+                    <span class="Videlenie">&lti&gt</span> . . . <span class="Videlenie">&lt/i&gt</span> - курсивный шрифт. эмоциональный акцент
+                    <br><br>
+                    <span class="Videlenie">&ltu&gt</span> . . . <span class="Videlenie">&lt/u&gt</span> - подчёркивание текста.
+                    <br><br>
+                    <span class="Videlenie">&lts&gt</span> . . . <span class="Videlenie">&lt/s&gt</span> - зачёркивание текста.
+                    <br><br>
+                    <span class="Videlenie">&lttt&gt</span> . . . <span class="Videlenie">&lt/tt&gt</span> - создает текст, имитирующий текст печатной машинки.
+                    <br><br>
+                    <span class="Videlenie">&lthr&gt</span> - одиночный тег без закрывающей части. ставит горизонтальную черту.
+                    <br><br>
+                    <b>Сохраните файл и обновите страницу в браузере. Исправьте ошибки при их наличии.</b>
+                    <br><br>
+                </p>
+                <img class="imagess" src="img/step3_2.png">
+            </div>
+            <br>
+            <div class="codedeystviya">
+                <p>Чего-то не хватает? Тексту можно задать шрифт и цвет.
+                    <br><br><b>3. Давайте попробуем это сделать c помощью применения стиля для тега.</b>
+                    <br><br>
+                    <span class="Videlenie">&ltp style = "color: #000000>"&gt</span> . . . <span class="Videlenie">&lt/p&gt</span> - шестнадцатеричным значением с решёткой зададим цвет текста для выбранного p. Вместо #000000 (это чистый чёрный) вставим другой цвет. Например, #FFDB8B.
+                    <br><br>
+                    <span class="Videlenie">&ltp style = "color: #FFDB8B; font-family: georgia"&gt</span> . . . <span class="Videlenie">&lt/p&gt</span> - а здесь выберем шрифт и добавим его всё в тот же p.
+                    <br><br>
+                </p>
+                <p class="videlenie_poloska"><span style="color:#e36e00"><b>Будьте внимательны:</b></span><br> 
+                   не забывайте расставлять верные знаки! например, <b>" "</b> (в них заключается сам стиль для применения) и <b>;</b> (служит для перечисления) - без них команда не заработает.
+                </p>
+                <br>
+                <img class="imagess" src="img/color_and_font.png">
+                <br><br>
+                Но что делать, если я хочу чтобы весь текст был таким, а не только выбранные абзацы?
+                <br>
+                Обратимся к тегу body. Зададим ему стиль! Сделайте это самостоятельно на примерах выше.
+                <br><br>
+                <img class="imagess" src="img/code_yellowtext.png">
+                <img class="imagess" src="img/yellowtext.png">
+                <br><br>
+                Теперь проблема в другом. Светлый текст сливается со стандартным белым и хочется поменять цвет фона.
+                <br><br>
+                Возвращаемся к body и находим место для bgcolor = #000000. Естественно, вместо #000000 пишем код выбранного цвета.
+                <br>
+                <p class="videlenie_poloska"><span style="color:#e36e00"><b>Обратите внимание:</b></span><br> 
+                bgcolor = #000000 не заключён в ковычки!
+                </p><br>
+                <img class="imagess" src="img/code_bgcolor.png">
+                <img class="imagess" src="img/bgcolor.png">
+            </div>
+            <div class="codedeystviya">
+                <hr color="#33333E"><br>
+                <p>
+                    <b>ДООЛНИТЕЛЬНО!</b> Пронумеруйте абзацы.<br><br>
+                    <span class="Videlenie">&ltol&gt</span>
+                    <br>
+                    ⠀⠀⠀<span class="Videlenie">&ltli&gt</span>Первый пункт<span class="Videlenie">&lt/li&gt</span>
+                    <br>
+                    ⠀⠀⠀<span class="Videlenie">&ltli&gt</span>Второй пункт<span class="Videlenie">&lt/li&gt</span>
+                    <br>
+                    ⠀⠀⠀<span class="Videlenie">&ltli&gt</span>Третий пункт<span class="Videlenie">&lt/li&gt</span>
+                    <br>
+                    <span class="Videlenie">&lt/ol&gt</span>
+                    <br>
+                </p>
+                <br>
+                <img class="imagess" src="img/numbers.png">
+                <img class="imagess" src="img/code_numbers.png">
+            </div>
+    </div>
+    <br>
+    <div class="links and img" id="links and img">
+        <table class="shapochka_obshaya">
+            <tr>
+                <td>
+                    <p style="padding-left: 67px">ШАГ 4 - Ссылки и изображения</p>
+                </td>
+            </tr>
+        </table>
+        <br>
+        <p style="padding-left: 67px; padding-right: 67px;">
+            <b>Ссылки:</b><br>
+            создаются с помощью тега <span class="Videlenie">&lta&gt</span> и атрибута <span class="Videlenie">&lthref&gt</span> (куда ведёт ссылка)
+            <br><br>
+            <b>Изобрражения:</b><br>
+            вставляются тегом <span class="Videlenie">&ltimg&gt</span> и атрибутом <span class="Videlenie">&ltscr&gt</span> (путь к файлу)
+            <br><br>
+        <hr color="#33333E">
+        </p>
+        <p class="deystviya" style="padding-left: 67px; padding-right: 67px;">ПРАКТИКА</p>
+        <p style="padding-left: 67px; padding-right: 67px;"><b>ЗАДАНИЕ:</b> найдите страничку автора вашего текста на википедии и вставьте как активную (кликабельную) ссылку на страницу в строку, где ранее указали его. после этого найдите место для фоторафии автора.</p>
+            <div class="codedeystviya">
+                <p>
+                    <b>1. Сделайте ссылку.</b>
+                    <br><br>
+                    выглядеть это будет так:
+                    <br>
+                    <span class="Videlenie">&lta href = "ваша ссылка"&gt</span> . . . <span class="Videlenie">&lt/a&gt</span>
+                    <br><br>
+                    <img class="imagess" src="img/links.png">
+                    <br><br>
+                    Цвет ссылки меняется на другой автоматически. Чтобы поменять его на свой, используем стиль (style) для тега a:
+                    <br>
+                    <span class="Videlenie">&lta href = "ваша ссылка" style = "color: #000000"&gt</span> . . . <span class="Videlenie">&lt/a&gt</span>
+                    <br><br>
+                    <img class="imagess" src="img/links_color.png">
+                    <br><br>
+                    <b>2. Вставьте фотографию.</b>
+                    <br><br>
+                    Для этого создадим в папке нашего сайта ещё одну папку, куда закинем картинку.
+                    <br><br>
+                    <img class="imagess" src="img/img_group.png">
+                    <br><br>
+                    Обратите внимание, что тегу img закрывающая часть не требуется:
+                    <br>
+                    <span class="Videlenie">&ltimg src = "название папки/название_картинки.png"&gt</span>
+                    <p class="videlenie_poloska"><span style="color:#e36e00"><b>Путь к картинке:</b></span><br> 
+                    не должен лежать через диски и папки, которые могут отсутствовать у другого пользователя! работайте только внутри папки сайта.
+                    </p>
+                    <br>
+                    <img class="imagess" src="img/photos.png">
+                    <br><br>
+                    Что делать, если картинка получилась слишком большой или маленькой?
+                    <br>
+                    Зададим ей ширину (width) и высоту (height). Лучше всего это делать в пикселях.
+                    <br><br>
+                    <span class="Videlenie">&ltimg src = "название папки/название_картинки.png" width = "400px" "200px"&gt</span>
+                    <br><br>
+                    <img class="imagess" src="img/photos2.png">
+                    <br>
+                    <br><br>
+                    <b>Сохраните файл и обновите страницу в браузере. Исправьте ошибки при их наличии.</b>
+                </p>
+            </div>    
+    </div>
+    <br>
+    <div class="viravnivanie" id="viravnivanie">
+        <table class="shapochka_obshaya">
+            <tr>
+                <td>
+                    <p style="padding-left: 67px">ШАГ 5 - Выравнивание текста</p>
+                </td>
+            </tr>
+        </table>
+        <br>
+        <p style="padding-left: 67px; padding-right: 67px;">
+            Для того, чтобы текст автоматически не слипался влево, оставляя большое пространство справа, существует ввыравнивания текста. Для выравнивания текста внутри атрибута style нужно задать следующее:<br>
+            <br>
+            <span class="Videlenie">&ltp style = "text-align: center"&gt</span> текст по центру <span class="Videlenie">&ltp&gt</span>
+            <br>
+            <span class="Videlenie">&ltp style = "text-align: right"&gt</span> текст справа <span class="Videlenie">&ltp&gt</span>
+            <br>
+            <span class="Videlenie">&ltp style = "text-align: left"&gt</span> текст слева <span class="Videlenie">&ltp&gt</span>
+            <br>
+            <span class="Videlenie">&ltp style = "text-align: justify"&gt</span> текст по ширине <span class="Videlenie">&ltp&gt</span>
+            <br><br>
+            Этот style применим в том числе и для тега заголовков (h1, h2, h3 и д.р)!
+            <p>
+            <br>
+        <hr color="#33333E">
+        </p>
+        <p class="deystviya" style="padding-left: 67px; padding-right: 67px;">ПРАКТИКА</p>
+        <p style="padding-left: 67px; padding-right: 67px;"><b>ЗАДАНИЕ:</b> примените все указанные виды выравнивания как для параграфов (p), так и для заголовков (h1, h2).</p>
+            <div class="codedeystviya">
+                <p>
+                    <b>ПОДСКАЗКА</b>
+                    <br><br>
+                    Если желаете выравнять весь текст сразу, обратитесь к тегу body.
+                    <br><br>
+                    <img class="imagess" src="img/center.png">
+                    <br>
+                </p>
+            </div>    
+            <br>
+            <p style="padding-left: 67px; padding-right: 67px;">
+            Вот и всё! После выполнения этих несложных заданий можно сказать, что у вас имеется самый базовый каскад для работы с html.
+            </p>
+    </div>
+    <br>
+    <div class="konec">
+        <br>
+        <div class="konec_links">
+            <a style="padding-left: 25px; color: #e36e00; text-decoration: none;" href="index.html">Главная</a>
+            <a style="color: #e36e00; text-decoration: none;" href="index2.html">Основы Html</a>
+            <a style="color: #e36e00; text-decoration: none;" href="index0.html">Список Тегов</a>
+            <a style="color: #e36e00; text-decoration: none;" href="index3.html">Практика основ</a>
+        </div>
+        <p style='padding-left: 25px'>2026 г.<br>
+        Авторы проекта:<br>
+        Студенты гр.ИСИП 25-1 Янковский Иван и Цветкова Эрика</p>
+        <p style='padding-left: 25px'>
+            Связь с нами:<br>
+            frogilenorezerv@gmail.com<br>
+            eream.jc@gmail.com
+        </p>
+    </div>
+</body>
+</html>

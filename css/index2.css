@@ -187,6 +187,35 @@ body{
     color: #CCCCCD;
     font-size: 20px;
 }
+.Atribyti_tegov_shapka{
+    background-color:#141419;
+    width: 100%;
+    border-bottom: solid 2px #33333E;   
+    font-family: Montserrat_Alternates_SemiBold;
+    font-size: 32px;
+    color: #CCCCCD;
+}
+.Atribyti_tegov{
+    font-family: Montserrat_Alternates_Regular;
+    color: #CCCCCD;
+    font-size: 20px;
+}
+.Atribyti_tegov_content{
+    font-family: Montserrat_Alternates_Regular;
+    color: #CCCCCD;
+    font-size: 20px;
+}
+.Atribyti_ramka{
+    background-color: #141419;
+    padding: 35px;
+    border-radius: 7px;
+    width: 90%;
+    font-family: Montserrat_Alternates_Bold;
+    font-size: 32px;
+    color: #CCCCCd;
+    margin-left: 66px;
+    margin: auto;
+}
 .konec{
     background-color:#141419;
     width: 100%;
